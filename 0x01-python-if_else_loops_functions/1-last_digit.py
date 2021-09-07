@@ -5,7 +5,7 @@ m = "Last digit of"
 n = "and is less than 6 and not 0"
 if number < 0:
     num = number % -10
-elif number > 0:
+elif number >= 0:
     num = number % 10
 if num > 5:
     print("{} {:d} is {:d} and is greater than 5".format(m, number, num))
