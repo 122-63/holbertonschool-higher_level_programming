@@ -1,0 +1,16 @@
+#include "lists.h"
+/**
+ * dlistint_len - returns the number of elements in a linked dlistint_t list.
+ * @h:puntero
+ * Return: element
+ */
+size_t dlistint_len(const dlistint_t *h)
+{
+	size_t element;
+
+	for (element = 0; h != NULL; element++)
+	{
+		h = h->next;
+	}
+	return (element);
+}
