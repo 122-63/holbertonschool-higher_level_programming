@@ -27,10 +27,13 @@ Also works with floating values.
 Floats must be converted to ints before summing.
 
    >>> add_integer(3.9, 0.2)
-   2
+   3
 
    >>> add_integer(-3.9, -0.2)
-   2
+   -3
+
+   >>> add_integer(2)
+   100
 
 Float and integer values can be combined.
 
@@ -49,8 +52,16 @@ If either argument is a non-integer and non-float, a TypeError is raised.
 
    >>> add_integer(5, "abc")
    Traceback (most recent call last):
-   TypeError: a must be an integer
+   TypeError: b must be an integer
 
    >>> add_integer("abc", "hello")
    Traceback (most recent call last):
    TypeError: a must be an integer
+
+   >>> add_integer(None)
+   Traceback (most recent call last):
+   TypeError: a must be an integer
+
+   >>> add_integer(2.3, None)
+   Traceback (most recent call last):
+   TypeError: b must be an integer
