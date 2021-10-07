@@ -25,6 +25,14 @@ The function returns the new matrix with the result of division.
     [[0.37, -0.77, 1.07], [-1.37, 1.87, 2.2]]
 
     >>> m = [[1, 2, -3], [4, -5, 6]]
+    >>> matrix_divided(m, 4.5)
+    [[0.22, 0.44, -0.67], [0.89, -1.11, 1.33]]
+
+    >>> m = [[]]
+    >>> matrix_divided(m, 4.5)
+    [[]]
+
+    >>> m = [[1, 2, -3], [4, -5, 6]]
     >>> matrix_divided(m, 3)
     [[0.33, 0.67, -1.0], [1.33, -1.67, 2.0]]
     
