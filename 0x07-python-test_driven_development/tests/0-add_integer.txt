@@ -65,3 +65,15 @@ If either argument is a non-integer and non-float, a TypeError is raised.
    >>> add_integer(2.3, None)
    Traceback (most recent call last):
    TypeError: b must be an integer
+
+   >>> add_integer(5, float('inf'))
+   Traceback (most recent call last):
+   OverflowError: cannot convert float infinity to integer
+
+   >>> add_integer(float("NaN"), 0)
+   Traceback (most recent call last):
+   ValueError: cannot convert float NaN to integer
+
+   >>> add_integer()
+   Traceback (most recent call last):
+   TypeError: add_integer() missing 1 required positional argument: 'a'
