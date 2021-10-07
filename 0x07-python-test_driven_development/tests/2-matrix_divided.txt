@@ -80,3 +80,13 @@ The function returns the new matrix with the result of division.
     >>> matrix_divided(m, 4)
     Traceback (most recent call last):
     TypeError: must be a matrix (list of lists) of integers/floats
+
+    >>> m = [[], []]
+    >>> matrix_divided(m, 4)
+    [[], []]
+
+    >>> m = ([[], []],)
+    >>> matrix_divided(m, 4)
+    Traceback (most recent call last):
+    TypeError: must be a matrix (list of lists) of integers/floats
+    
