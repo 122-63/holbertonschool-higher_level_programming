@@ -48,3 +48,9 @@ The function returns the new matrix with the result of division.
     >>> matrix_divided(m, "abc")
     Traceback (most recent call last):
     TypeError: div must be a number
+
+    >>> m = [[1, 2, 3], [4, 5, 6]]
+    >>> matrix_divided(m, 0)
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+    
