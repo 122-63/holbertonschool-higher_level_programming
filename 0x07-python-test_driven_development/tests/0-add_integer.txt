@@ -39,6 +39,12 @@ Float and integer values can be combined.
 
    >>> add_integer(3.4, -5)
    -2
+   
+   >>> add_integer(float('NaN'), 0)
+   89
+
+   >>> add_integer(1, float('inf'))
+   89
 
 Non-Numbers
 ============
