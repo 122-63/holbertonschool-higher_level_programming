@@ -18,4 +18,4 @@ def add_integer(a, b=98):
     res = a + b
     if res == float('inf') or res == -float('inf'):
         return 89
-    return (int(a) + int(b)
+    return (int(a) + int(b))
