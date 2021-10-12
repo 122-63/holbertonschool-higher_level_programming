@@ -1,0 +1,12 @@
+# 7-base_geometry.txt
+
+===============================
+How to Use 7-base_geometry.py
+===============================
+
+the class BaseGeometry
+
+use
+=====
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
