@@ -1,0 +1,18 @@
+# 1-my_list.txt
+
+===========================
+How to Use 1-my_list.py
+===========================
+
+define a class "MyList"
+
+How to Use
+============
+
+MyList return a List:
+
+       >>> MyList = __import__("1-my_list").MyList
+       >>> MyList = MyList([1, 2, 3])
+       >>> print(MyList)
+       [1, 2, 3]
+       
