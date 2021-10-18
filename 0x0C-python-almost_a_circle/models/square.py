@@ -40,12 +40,12 @@ class Square(Rectangle):
                     self.y = arg
                 i += 1
 
-            else:
-                if "id" in kwargs:
-                    self.id = kwargs["id"]
-                if "size" in kwargs:
-                    self.size = kwargs["size"]
-                if "x" in kwargs:
-                    self.x = kwargs["x"]
-                if "y" in kwargs:
-                    self.y = kwargs["y"]
+        else:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "size" in kwargs:
+                self.size = kwargs["size"]
+            if "x" in kwargs:
+                self.x = kwargs["x"]
+            if "y" in kwargs:
+                self.y = kwargs["y"]
