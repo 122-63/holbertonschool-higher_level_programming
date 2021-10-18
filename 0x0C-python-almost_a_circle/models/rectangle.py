@@ -104,7 +104,6 @@ class Rectangle(Base):
             i = 0
             for i, arg in enumerate(args):
                 if i == 0:
-                    else:
                         self.id = arg
                 elif i == 1:
                     self.width = arg
