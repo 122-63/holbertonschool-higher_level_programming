@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """define a Base class"""
 import json
+from typing import Sequence
+import os
+import os.path
+import csv
 
 
 class Base:
@@ -53,3 +57,16 @@ class Base:
             dummy = cls(1, 1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """returns a list of instances"""
+        instance_list = []
+        filename = cls.__name__ + ".json"
+        if not os.path.isfile(filename):
+            return (instance_list)
+        with open(filename) as my_file:
+            my_data = cls.from_json_string(my_file.read())
+            for instance in my_data:
+                instance_list.append(cls.create(**instance))
+        return (instance_list)
