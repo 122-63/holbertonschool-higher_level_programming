@@ -1,6 +1,7 @@
 #!/usr/bin/node
 // Write a script that prints 3 lines
 // using an array of string and a loop
-for (const langs of ['C is fun', 'Python is cool', 'Javascript is amazing']) {
-  console.log(langs);
+const langs = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+for (const lang of langs) {
+  console.log(lang);
 }
