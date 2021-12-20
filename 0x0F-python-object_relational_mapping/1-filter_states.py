@@ -9,7 +9,7 @@ import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
-    db = MySQL.connect(user=argv[1], password=argv[2], db=argv[3])
+    db = MySQLdb.connect(user=argv[1], password=argv[2], db=argv[3])
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY id")
     for states in cur.fetchall():
