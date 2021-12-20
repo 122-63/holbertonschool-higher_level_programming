@@ -12,6 +12,8 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=argv[1], password=argv[2], db=argv[3])
     cur = db.cursor()
     cur.execute("SELECT * FROM states")
-    for states in cur.fetchall():
-        if states[1] == sys.argv[4]:
-            print(states)
+    for state in cur.fetchall():
+        if state[1] == sys.argv[4]:
+            print(state)
+    cur.close()
+    db.close()
