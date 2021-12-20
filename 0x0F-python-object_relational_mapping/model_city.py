@@ -3,7 +3,8 @@
 file similar to model_state.py named model_city.py
 that contains the class definition of a City
 """
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.sql.schema import ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
