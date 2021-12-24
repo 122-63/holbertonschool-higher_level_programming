@@ -14,4 +14,4 @@ if __name__ == "__main__":
         if row[1] == argv[4]:
             print(row)
     cur.close()
-    conn.close()
+    db.close()
