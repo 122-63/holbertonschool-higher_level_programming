@@ -12,6 +12,6 @@ if __name__ == "__main__":
     cur.execute("""SELECT cities.id, cities.name, states.name FROM cities\
                 LEFT JOIN states ON cities.state_id = states.id ORDER BY\
                 cities.id ASC""")
-    print(", ".join([ct[2] for ct in c.fetchall() if ct[4] == argv[4]]))
+    print(", ".join([ct[2] for ct in cur.fetchall() if ct[4] == argv[4]]))
     cur.close()
     db.close()
