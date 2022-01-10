@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-POST - email - requests 
+POST - email - requests
 """
 import requests
 from sys import argv
