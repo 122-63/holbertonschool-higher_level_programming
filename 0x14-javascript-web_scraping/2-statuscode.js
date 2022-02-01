@@ -2,11 +2,11 @@
 const https = require('https');
 
 const req = https.request(process.argv[2], res => {
-  console.log(`code: ${res.statusCode}`);
+  process.stdout.write(`code: ${res.statusCode}\n`);
 });
 
 req.on('error', error => {
-  console.log(`code: ${error.statusCode}`);
+  process.stdout.write(`code: ${error.statusCode}\n`);
 });
 
 req.end();
